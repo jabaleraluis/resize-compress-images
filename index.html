@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@latest/fonts/remixicon.css" />
+  <link rel="shortcut icon" href="/assets/ico/ico.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="/js/script.js" defer></script>
+  <title>Resize & Compress Images</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="upload-box">
+      <input type="file" accept="image/*" hidden>
+      <img src="/assets/images/upload-icon.svg" alt="">
+      <p>Browse File to Upload</p>
+    </div>
+    <div class="content">
+      <div class="row sizes">
+        <div class="column width">
+          <label for="width">Width</label>
+          <input type="number" id="width">
+        </div>
+        <div class="column height">
+          <label for="height">Height</label>
+          <input type="number" id="height">
+        </div>
+      </div>
+      <div class="row checkboxes">
+        <div class="column ratio">
+          <input type="checkbox" id="ratio" checked>
+          <label for="ratio">Lock aspect ratio</label>
+        </div>
+        <div class="column quality">
+          <input type="checkbox" id="quality">
+          <label for="quality">Reduce quality</label>
+        </div>
+      </div>
+      <button class="download-btn"><i class="ri-download-cloud-2-line"></i> Download Image</button>
+    </div>
+  </div>
+</body>
+
+</html>
